@@ -299,7 +299,8 @@ p{
 #contact h3, #contact > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
-    display: flex;
+    grid-column: 1 / -1;
+    text-align: center;
 
 }
 
@@ -387,6 +388,10 @@ th:nth-of-type(even), td:nth-of-type(even){
 #social ul{
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    justify-items: center;
     width: fit-content;
     margin: 16px auto;
     list-style-type: none;
@@ -397,6 +402,8 @@ th:nth-of-type(even), td:nth-of-type(even){
 #social h4{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1 / -1;
+    text-align: center;
 }
 
 #social a{
